@@ -39,20 +39,17 @@ def dou(phenny, input):
     randmsg = random.choice(["dou it up","i dou what i want","dou it live"])
     phenny.say(randmsg)
 dou.rule = '(dou|doo)$'
-# dou.priority = 'high'
 
 def zzz(phenny, input):
     randmsg = random.choice(["zzz","zeeee"])
     phenny.say(randmsg)
 zzz.rule = '(zzz)$'
-# zzz.priority = 'high'
 
 def good_one(phenny, input):
     randmsg = random.choice(["FOR REAL LOL", "HAH!"])
     phenny.say(randmsg)
     time.sleep(random.randint(0,1))
 good_one.rule = '(good one)$'
-# good_one.priority = 'high'
 
 def beaker(phenny, input):
     if input.nick == "ayashi":
@@ -62,12 +59,10 @@ def beaker(phenny, input):
     else:
         phenny.say("beaker beaker")
 beaker.rule = '(:<.*)$'
-# beaker.priority = 'high'
 
 def zoidberg(phenny, input):
     phenny.say("(V)o,,,o(V) - Why not Zoidberg?")
 zoidberg.rule = '(zoidberg)$'
-# zoidberg.priority = 'high'
 
 def brusque(phenny, input):
     randmsg = random.choice(["stop that"])
@@ -100,17 +95,14 @@ beaker_face.rule = '(beaker)$'
 def sad_beaker(phenny, input):
     phenny.say(":'<")
 sad_beaker.rule = '(sad beaker)$'
-# beaker_face.priority = 'high'
 
 def birdface_word(phenny, input):
     phenny.say("god damn birdface")
 birdface_word.rule = '(:>)$'
-# birdface_word.priority = 'high'
 
 def birdface_face(phenny, input):
     phenny.say(":>")
 birdface_face.rule = '(birdface)$'
-# birdface_face.priority = 'high'
 
 def balls(phenny, input):
     phenny.say("worldguest likes balls")
@@ -119,12 +111,10 @@ balls.rule = '(balls)$'
 def owl(phenny, input):
     phenny.reply('It\'s artificial?')
 owl.rule = '(do you like our owl?.*)$'
-# owl.priority = 'high'
 
 def owl2(phenny, input):
     phenny.reply('Must be expensive.')
 owl2.rule = '(of course it is.*)$'
-# owl2.priority = 'high'
 
 def cockboat(phenny, input):
     phenny.reply('septor wanted me to make this command so i made it, there.  Are you happy now?')
