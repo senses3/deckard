@@ -8,7 +8,7 @@ https://github.com/crispus/deckard/
 
 import random, time
 
-def antigerber(jenni, input):
+def antigerber(phenny, input):
 	if input.nick == "gerberboyprime":
 		randmsg = random.choice([
 			"Do you ever shut the fuck up?",
@@ -25,5 +25,5 @@ def antigerber(jenni, input):
 			"What did I *JUST* say motherfucker?",
 			"Shut the god damn fuck up already."])
 		time.sleep(random.randint(0,2))
-		jenni.reply(randmsg)
+		phenny.reply(randmsg)
 antigerber.rule = '.*'
