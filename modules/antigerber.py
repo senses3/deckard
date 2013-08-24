@@ -3,7 +3,7 @@
 antigerber.py - Anti Gerberboyprime Module
 
 More info:
-https://github.com/crispus/deckard/
+https://github.com/nickfletcher/deckard/
 """
 
 import random, time
