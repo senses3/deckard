@@ -10,13 +10,22 @@ https://github.com/nickfletcher/deckard/
 
 import random, time
 
+def bacon(phenny, input):
+    phenny.say("Bacon time is NOW!")
+bacon.rule ='(bacon?.)$'
+
+def zee(phenny, input):
+    randmsg = random.choice(["zzz", "ill sleep when im dead"])
+    phenny.say(randmsg)
+zee.rule = '(zee.*)$'
+
 def same(phenny, input):
-    randmsg = random.choice(["same", "same same","same same but different"])
+    randmsg = random.choice(["same", "also, same","same same","same same but different"])
     phenny.say(randmsg)
 same.rule = '(same)$'
 
 def bro(phenny, input):
-    randmsg = random.choice(["bro it up bro", "brobox360"])
+    randmsg = random.choice([".chat about jelly bro"])
     phenny.say(randmsg)
 bro.rule = '(bro)$'
 
@@ -26,7 +35,7 @@ def dank(phenny, input):
 dank.rule = '(dank)$'
 
 def hella(phenny, input):
-    randmsg = random.choice(["hella yolo swaggins","hella wicked dope yolo swag","hella dope with some wicked yolo swag bitch","hella yeah","hella citronella nutella my salmonella!","thats hella wicked dank bro"])
+    randmsg = random.choice(["hella jelly bro?","hella yolo swaggins","hella wicked dope yolo swag","hella dope with some wicked yolo swag bitch","hella yeah","hella citronella nutella my salmonella!","thats hella wicked dank bro"])
     phenny.say(randmsg)
 hella.rule = '(hella)$'
 
@@ -53,7 +62,7 @@ good_one.rule = '(good one)$'
 
 def beaker(phenny, input):
     if input.nick == "ayashi":
-        randmsg = random.choice(["hey bitch", "beaker bitch", "beaker beaker ayashi"])
+        randmsg = random.choice(["beaker all up ins", "beaker bitch", "beaker beaker ayashi"])
         time.sleep(random.randint(0,1))
         phenny.reply(randmsg)
     else:
