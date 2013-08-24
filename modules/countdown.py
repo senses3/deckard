@@ -9,21 +9,21 @@ https://github.com/nickfletcher/deckard/
 import datetime
 
 def paxeast(phenny, input):
-    diff = datetime.datetime(2013, 03, 22) - datetime.datetime.now()
+    diff = datetime.datetime(2014, 04, 11) - datetime.datetime.now()
     phenny.say("Pax East is " + str(diff.days) + " days, " + str(diff.seconds/60/60) + " hours, and " + str(diff.seconds/60 - diff.seconds/60/60 * 60) + " minutes from now.")
-paxeast.commands = ['paxeast']
+paxeast.rule = '(paxeast?.)$'
 
 def paxprime(phenny, input):
     diff = datetime.datetime(2013, 8, 30) - datetime.datetime.now()
     phenny.say("Pax Prime is " + str(diff.days) + " days, " + str(diff.seconds/60/60) + " hours, and " + str(diff.seconds/60 - diff.seconds/60/60 * 60) + " minutes from now.")
-paxprime.commands = ['paxprime']
+paxprime.rule = '(paxprime?.)$'
 
-def blizzcon(phenny, input):
+def bcon(phenny, input):
     diff = datetime.datetime(2013, 11, 8) - datetime.datetime.now()
     phenny.say("Blizzcon is " + str(diff.days) + " days, " + str(diff.seconds/60/60) + " hours, and " + str(diff.seconds/60 - diff.seconds/60/60 * 60) + " minutes from now.")
-blizzcon.commands = ['blizzcon']
+bcon.rule = '(bcon?.|blizzcon?.)$'
 
 def simcity(phenny, input):
     diff = datetime.datetime(2013, 03, 5) - datetime.datetime.now()
     phenny.say("SimCity 5 is " + str(diff.days) + " days, " + str(diff.seconds/60/60) + " hours, and " + str(diff.seconds/60 - diff.seconds/60/60 * 60) + " minutes from now pharix! lol.")
-simcity.commands = ['simcity']
+simcity.rule = '(simcity?.)$'
