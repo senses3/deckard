@@ -14,7 +14,7 @@ def paxeast(phenny, input):
 paxeast.rule = '(paxeast?.)$'
 
 def paxprime(phenny, input):
-    diff = datetime.datetime(2013, 8, 30) - datetime.datetime.now()
+    diff = datetime.datetime(2014, 8, 29) - datetime.datetime.now()
     phenny.say("Pax Prime is " + str(diff.days) + " days, " + str(diff.seconds/60/60) + " hours, and " + str(diff.seconds/60 - diff.seconds/60/60 * 60) + " minutes from now.")
 paxprime.rule = '(paxprime?.)$'
 
