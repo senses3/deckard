@@ -131,6 +131,12 @@ def baconpancake(phenny, input):
     phenny.say('bacon pancakes, makin bacon pancakes http://www.youtube.com/watch?v=sxVvKb0fGAY')
 baconpancake.rule = '(baconpancake)$'
 
-def cnn(phenny, input):
-    phenny.say('cnn is pretty gay')
-cnn.rule = '(cnn)$'
+def pizza(phenny, input):
+    randmsg = random.choice(["everytime i want that pizza (x6)", "i need some pizza(x6)", "i go to davids pizza", "when i get a serious craving for something i want to eat", "i need some cheese, tomatoes, and olives, and maybe even some meat"])
+    phenny.say(randmsg)
+pizza.rule = '(pizza?.)$'
+
+def fox(phenny, input):
+    randmsg = random.choice(["Ring-ding-ding-ding-dingeringeding!", "Wa-pa-pa-pa-pa-pa-pow!", "Hatee-hatee-hatee-ho!", "Joff-tchoff-tchoffo-tchoffo-tchoff!", "Jacha-chacha-chacha-chow!", "Fraka-kaka-kaka-kaka-kow!", "A-hee-ahee ha-hee!", "A-oo-oo-oo-ooo!"])
+    phenny.say(randmsg)
+fox.rule = '(fox?.)$'
