@@ -10,133 +10,133 @@ https://github.com/nickfletcher/deckard/
 
 import random, time
 
-def bacon(phenny, input):
-    phenny.say("Bacon time is NOW!")
+def bacon(deckard, input):
+    deckard.say("Bacon time is NOW!")
 bacon.rule ='(bacon?.)$'
 
-def zee(phenny, input):
+def zee(deckard, input):
     randmsg = random.choice(["zzz", "ill sleep when im dead"])
-    phenny.say(randmsg)
+    deckard.say(randmsg)
 zee.rule = '(zee.*)$'
 
-def same(phenny, input):
+def same(deckard, input):
     randmsg = random.choice(["same", "also, same","same same","same same but different"])
-    phenny.say(randmsg)
+    deckard.say(randmsg)
 same.rule = '(same)$'
 
-def bro(phenny, input):
+def bro(deckard, input):
     randmsg = random.choice([".chat about jelly bro"])
-    phenny.say(randmsg)
+    deckard.say(randmsg)
 bro.rule = '(bro)$'
 
-def dank(phenny, input):
+def dank(deckard, input):
     randmsg = random.choice(["ARMY OF DANKNESS","diggity damn","dank like a skank tank"])
-    phenny.say(randmsg)
+    deckard.say(randmsg)
 dank.rule = '(dank)$'
 
-def hella(phenny, input):
+def hella(deckard, input):
     randmsg = random.choice(["hella jelly bro?","hella yolo swaggins","hella wicked dope yolo swag","hella dope with some wicked yolo swag bitch","hella yeah","hella citronella nutella my salmonella!","thats hella wicked dank bro"])
-    phenny.say(randmsg)
+    deckard.say(randmsg)
 hella.rule = '(hella)$'
 
-def naksa(phenny, input):
+def naksa(deckard, input):
     randmsg = random.choice(["who let naksa drink","who the hell let naksa drink","who the fuck let naksa drink"])
-    phenny.say(randmsg)
+    deckard.say(randmsg)
 naksa.rule = '(naksa)$'
 
-def dou(phenny, input):
+def dou(deckard, input):
     randmsg = random.choice(["dou it up","i dou what i want","dou it live"])
-    phenny.say(randmsg)
+    deckard.say(randmsg)
 dou.rule = '(dou|doo)$'
 
-def zzz(phenny, input):
+def zzz(deckard, input):
     randmsg = random.choice(["zzz","zeeee"])
-    phenny.say(randmsg)
+    deckard.say(randmsg)
 zzz.rule = '(zzz)$'
 
-def good_one(phenny, input):
+def good_one(deckard, input):
     randmsg = random.choice(["FOR REAL LOL", "HAH!"])
-    phenny.say(randmsg)
+    deckard.say(randmsg)
     time.sleep(random.randint(0,1))
 good_one.rule = '(good one)$'
 
-def beaker(phenny, input):
+def beaker(deckard, input):
     if input.nick == "ayashi":
         randmsg = random.choice(["beaker all up ins", "beaker bitch", "beaker beaker ayashi"])
         time.sleep(random.randint(0,1))
-        phenny.reply(randmsg)
+        deckard.reply(randmsg)
     else:
-        phenny.say("beaker beaker")
+        deckard.say("beaker beaker")
 beaker.rule = '(:<.*)$'
 
-def zoidberg(phenny, input):
-    phenny.say("(V)o,,,o(V) - Why not Zoidberg?")
+def zoidberg(deckard, input):
+    deckard.say("(V)o,,,o(V) - Why not Zoidberg?")
 zoidberg.rule = '(zoidberg)$'
 
-def brusque(phenny, input):
+def brusque(deckard, input):
     randmsg = random.choice(["stop that"])
-    phenny.say(randmsg)
+    deckard.say(randmsg)
 brusque.rule = '(brusque.*)$'
 
-def dope(phenny, input):
+def dope(deckard, input):
     randmsg = random.choice(["dope like taupe", "the pope smokes dope"])
-    phenny.say(randmsg)
+    deckard.say(randmsg)
 dope.rule = '(dope.*)$'
 
-def fuckworldguest(phenny, input): 
-    phenny.say(input.nick + "++")
+def fuckworldguest(deckard, input):
+    deckard.say(input.nick + "++")
 fuckworldguest.rule = '(worldguest--)$'
 
-def badkarma(phenny, input): 
-    phenny.say(input.nick + "--")
+def badkarma(deckard, input):
+    deckard.say(input.nick + "--")
 badkarma.rule = '(deckard--)$'
 
-def beaker_face(phenny, input):
-    phenny.say(":<")
+def beaker_face(deckard, input):
+    deckard.say(":<")
 beaker_face.rule = '(beaker)$'
 
-def sad_beaker(phenny, input):
-    phenny.say(":'<")
+def sad_beaker(deckard, input):
+    deckard.say(":'<")
 sad_beaker.rule = '(sad beaker)$'
 
-def birdface_word(phenny, input):
-    phenny.say("god damn birdface")
+def birdface_word(deckard, input):
+    deckard.say("god damn birdface")
 birdface_word.rule = '(:>)$'
 
-def birdface_face(phenny, input):
-    phenny.say(":>")
+def birdface_face(deckard, input):
+    deckard.say(":>")
 birdface_face.rule = '(birdface)$'
 
-def balls(phenny, input):
-    phenny.say("worldguest likes balls")
+def balls(deckard, input):
+    deckard.say("worldguest likes balls")
 balls.rule = '(balls)$'
 
-def owl(phenny, input):
-    phenny.reply('It\'s artificial?')
+def owl(deckard, input):
+    deckard.reply('It\'s artificial?')
 owl.rule = '(do you like our owl?.*)$'
 
-def owl2(phenny, input):
-    phenny.reply('Must be expensive.')
+def owl2(deckard, input):
+    deckard.reply('Must be expensive.')
 owl2.rule = '(of course it is.*)$'
 
-def cockboat(phenny, input):
-    phenny.reply('septor wanted me to make this command so i made it, there.  Are you happy now?')
+def cockboat(deckard, input):
+    deckard.reply('septor wanted me to make this command so i made it, there.  Are you happy now?')
 cockboat.commands = ['cockboat']
 
-def tacosnack(phenny, input):
-    phenny.reply('I guess it\'s better than eating raw oyster and boiled dog. ;)')
+def tacosnack(deckard, input):
+    deckard.reply('I guess it\'s better than eating raw oyster and boiled dog. ;)')
 tacosnack.commands = ['tacosnack']
 
-def baconpancake(phenny, input):
-    phenny.say('bacon pancakes, makin bacon pancakes http://www.youtube.com/watch?v=sxVvKb0fGAY')
+def baconpancake(deckard, input):
+    deckard.say('bacon pancakes, makin bacon pancakes http://www.youtube.com/watch?v=sxVvKb0fGAY')
 baconpancake.rule = '(baconpancake)$'
 
-def pizza(phenny, input):
+def pizza(deckard, input):
     randmsg = random.choice(["everytime i want that pizza (x6)", "i need some pizza(x6)", "i go to davids pizza", "when i get a serious craving for something i want to eat", "i need some cheese, tomatoes, and olives, and maybe even some meat"])
-    phenny.say(randmsg)
+    deckard.say(randmsg)
 pizza.rule = '(pizza?.)$'
 
-def fox(phenny, input):
+def fox(deckard, input):
     randmsg = random.choice(["Ring-ding-ding-ding-dingeringeding!", "Wa-pa-pa-pa-pa-pa-pow!", "Hatee-hatee-hatee-ho!", "Joff-tchoff-tchoffo-tchoffo-tchoff!", "Jacha-chacha-chacha-chow!", "Fraka-kaka-kaka-kaka-kow!", "A-hee-ahee ha-hee!", "A-oo-oo-oo-ooo!"])
-    phenny.say(randmsg)
+    deckard.say(randmsg)
 fox.rule = '(fox?.)$'

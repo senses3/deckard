@@ -8,7 +8,7 @@ https://github.com/nickfletcher/deckard/
 
 import random, time
 
-def tip(phenny, input):
+def tip(deckard, input):
     randmsg = random.choice(["Nearby questgivers that are awaiting your return are shown as a question mark on your mini-map.",
         "Your spell casting can be cancelled by moving, jumping or hitting the escape key.",
         "Clicking on a player name in the chat window lets you send a private message to them.",
@@ -117,5 +117,5 @@ def tip(phenny, input):
         "The Raid UI can be customized in a number of different ways, such as how it shows debuffs or current health.",
         "Dungeons are more fun when everyone works together as a team. Be patient with players who are still learning the game."])
     time.sleep(random.randint(0,1)),
-    phenny.reply(randmsg)
+    deckard.reply(randmsg)
 tip.rule = '(tip?.)$'

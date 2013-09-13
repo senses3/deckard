@@ -8,7 +8,7 @@ https://github.com/nickfletcher/deckard/
 
 import random, time
 
-def sandwich(phenny, input):
+def sandwich(deckard, input):
     randmsg = random.choice(["Here's a fresh BLT!",
         "Have a tasty Chicken Carbonara!",
         "It's dangerous to go alone, take this Pastrami sandwich.",
@@ -21,6 +21,6 @@ def sandwich(phenny, input):
         "You won a Manwich.",
         "Enjoy this Club sandwich on me!"])
     time.sleep(random.randint(0,1))
-    phenny.reply(randmsg)
+    deckard.reply(randmsg)
 sandwich.rule = '(sandwich?.*|sandvich?.*)$'
 sandwich.priority = 'high'
