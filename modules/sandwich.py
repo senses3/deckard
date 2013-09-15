@@ -22,5 +22,5 @@ def sandwich(deckard, input):
         "Enjoy this Club sandwich on me!"])
     time.sleep(random.randint(0,1))
     deckard.reply(randmsg)
-sandwich.rule = '(sandwich?.*|sandvich?.*)$'
+sandwich.rule = '(sandwich\?|sandvich\?)$'
 sandwich.priority = 'high'

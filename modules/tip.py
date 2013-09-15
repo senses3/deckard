@@ -118,4 +118,4 @@ def tip(deckard, input):
         "Dungeons are more fun when everyone works together as a team. Be patient with players who are still learning the game."])
     time.sleep(random.randint(0,1)),
     deckard.reply(randmsg)
-tip.rule = '(tip?.)$'
+tip.rule = '(tip\?)$'

@@ -12,7 +12,7 @@ import random, time
 
 def bacon(deckard, input):
     deckard.say("Bacon time is NOW!")
-bacon.rule ='(bacon?.)$'
+bacon.rule ='(bacon)$'
 
 def zee(deckard, input):
     randmsg = random.choice(["zzz", "ill sleep when im dead"])
@@ -76,12 +76,12 @@ zoidberg.rule = '(zoidberg)$'
 def brusque(deckard, input):
     randmsg = random.choice(["stop that"])
     deckard.say(randmsg)
-brusque.rule = '(brusque.*)$'
+brusque.rule = '(brusque)$'
 
 def dope(deckard, input):
     randmsg = random.choice(["dope like taupe", "the pope smokes dope"])
     deckard.say(randmsg)
-dope.rule = '(dope.*)$'
+dope.rule = '(dope)$'
 
 def fuckworldguest(deckard, input):
     deckard.say(input.nick + "++")
@@ -113,11 +113,11 @@ balls.rule = '(balls)$'
 
 def owl(deckard, input):
     deckard.reply('It\'s artificial?')
-owl.rule = '(do you like our owl?.*)$'
+owl.rule = '(do you like our owl\?)$'
 
 def owl2(deckard, input):
     deckard.reply('Must be expensive.')
-owl2.rule = '(of course it is.*)$'
+owl2.rule = '(of course it is)$'
 
 def cockboat(deckard, input):
     deckard.reply('septor wanted me to make this command so i made it, there.  Are you happy now?')
@@ -125,7 +125,7 @@ cockboat.commands = ['cockboat']
 
 def tacosnack(deckard, input):
     deckard.reply('I guess it\'s better than eating raw oyster and boiled dog. ;)')
-tacosnack.commands = ['tacosnack']
+tacosnack.rule = '(tacosnack)$'
 
 def baconpancake(deckard, input):
     deckard.say('bacon pancakes, makin bacon pancakes http://www.youtube.com/watch?v=sxVvKb0fGAY')
@@ -134,9 +134,9 @@ baconpancake.rule = '(baconpancake)$'
 def pizza(deckard, input):
     randmsg = random.choice(["everytime i want that pizza (x6)", "i need some pizza(x6)", "i go to davids pizza", "when i get a serious craving for something i want to eat", "i need some cheese, tomatoes, and olives, and maybe even some meat"])
     deckard.say(randmsg)
-pizza.rule = '(pizza?.)$'
+pizza.rule = '(pizza\?)$'
 
 def fox(deckard, input):
     randmsg = random.choice(["Ring-ding-ding-ding-dingeringeding!", "Wa-pa-pa-pa-pa-pa-pow!", "Hatee-hatee-hatee-ho!", "Joff-tchoff-tchoffo-tchoffo-tchoff!", "Jacha-chacha-chacha-chow!", "Fraka-kaka-kaka-kaka-kow!", "A-hee-ahee ha-hee!", "A-oo-oo-oo-ooo!"])
     deckard.say(randmsg)
-fox.rule = '(fox?.)$'
+fox.rule = '(fox\?)$'
