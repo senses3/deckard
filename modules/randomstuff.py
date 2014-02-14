@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#coding: utf8
 """
 randomstuff.py - Random Stuff Module
 
@@ -12,7 +12,7 @@ import random, time
 
 def bacon(deckard, input):
     deckard.say("Bacon time is NOW!")
-bacon.rule ='(bacon)$'
+bacon.rule ='(bacon|bacon\?)$'
 
 def zee(deckard, input):
     randmsg = random.choice(["zzz", "ill sleep when im dead"])
@@ -20,7 +20,7 @@ def zee(deckard, input):
 zee.rule = '(zee.*)$'
 
 def same(deckard, input):
-    randmsg = random.choice(["same", "also, same","same same","same same but different"])
+    randmsg = random.choice(["same", "same.bmp", "same.png", "also, same","same same","same same same same same same same","same same but different"])
     deckard.say(randmsg)
 same.rule = '(same)$'
 
@@ -28,11 +28,6 @@ def bro(deckard, input):
     randmsg = random.choice([".chat about jelly bro"])
     deckard.say(randmsg)
 bro.rule = '(bro)$'
-
-def dank(deckard, input):
-    randmsg = random.choice(["ARMY OF DANKNESS","diggity damn","dank like a skank tank"])
-    deckard.say(randmsg)
-dank.rule = '(dank)$'
 
 def hella(deckard, input):
     randmsg = random.choice(["hella jelly bro?","hella yolo swaggins","hella wicked dope yolo swag","hella dope with some wicked yolo swag bitch","hella yeah","hella citronella nutella my salmonella!","thats hella wicked dank bro"])
@@ -42,10 +37,10 @@ hella.rule = '(hella)$'
 def naksa(deckard, input):
     randmsg = random.choice(["who let naksa drink","who the hell let naksa drink","who the fuck let naksa drink"])
     deckard.say(randmsg)
-naksa.rule = '(naksa)$'
+naksa.rule = '(naksa\?)$'
 
 def dou(deckard, input):
-    randmsg = random.choice(["dou it up","i dou what i want","dou it live"])
+    randmsg = random.choice(["dou it up","i dou what i want","dou it live","dou it tou it"])
     deckard.say(randmsg)
 dou.rule = '(dou|doo)$'
 
@@ -71,7 +66,7 @@ beaker.rule = '(:<.*)$'
 
 def zoidberg(deckard, input):
     deckard.say("(V)o,,,o(V) - Why not Zoidberg?")
-zoidberg.rule = '(zoidberg)$'
+zoidberg.rule = '(zoidberg\?)$'
 
 def brusque(deckard, input):
     randmsg = random.choice(["stop that"])
@@ -107,9 +102,9 @@ def birdface_face(deckard, input):
     deckard.say(":>")
 birdface_face.rule = '(birdface)$'
 
-def balls(deckard, input):
-    deckard.say("worldguest likes balls")
-balls.rule = '(balls)$'
+def worldguest(deckard, input):
+    deckard.say("who?")
+worldguest.rule = '(worldguest\?)$'
 
 def owl(deckard, input):
     deckard.reply('It\'s artificial?')
@@ -119,13 +114,14 @@ def owl2(deckard, input):
     deckard.reply('Must be expensive.')
 owl2.rule = '(of course it is)$'
 
-def cockboat(deckard, input):
-    deckard.reply('septor wanted me to make this command so i made it, there.  Are you happy now?')
-cockboat.commands = ['cockboat']
-
 def tacosnack(deckard, input):
     deckard.reply('I guess it\'s better than eating raw oyster and boiled dog. ;)')
 tacosnack.rule = '(tacosnack)$'
+
+def turkey(deckard, input):
+    randmsg = random.choice(['do you even praise it?', 'praise the god damn turkey'])
+    deckard.say(randmsg)
+turkey.rule = '(turkey\?)$'
 
 def baconpancake(deckard, input):
     deckard.say('bacon pancakes, makin bacon pancakes http://www.youtube.com/watch?v=sxVvKb0fGAY')
@@ -139,4 +135,54 @@ pizza.rule = '(pizza\?)$'
 def fox(deckard, input):
     randmsg = random.choice(["Ring-ding-ding-ding-dingeringeding!", "Wa-pa-pa-pa-pa-pa-pow!", "Hatee-hatee-hatee-ho!", "Joff-tchoff-tchoffo-tchoffo-tchoff!", "Jacha-chacha-chacha-chow!", "Fraka-kaka-kaka-kaka-kow!", "A-hee-ahee ha-hee!", "A-oo-oo-oo-ooo!"])
     deckard.say(randmsg)
-fox.rule = '(fox\?)$'
+fox.rule = '(what does the fox say\?|what the fox say\?|fox\?)$'
+
+def pig(deckard, input):
+    randmsg = random.choice([ "please step out of the vehicle", "licence and registration please" ])
+    deckard.say(randmsg)
+pig.rule = '(pig\?)$'
+
+def dealwithit(deckard, input):
+    deal = '(•_•) , ( •_•)>⌐■-■ , (⌐■_■) deal with it'
+    deckard.say(deal)
+dealwithit.rule = '(dwi)$'
+
+def tables(deckard, input):
+    flip = '(╯°□°）╯︵ ┻━┻)'
+    deckard.say(flip)
+tables.rule = '(tables\?)$'
+
+def tableflip(deckard, input):
+    flip = '(╯°□°）╯︵ ┻━┻)'
+    deckard.say(flip)
+tableflip.rule = '(flip\!)$'
+
+def tablefix(deckard, input):
+    noflip = '┬─┬ノ( º _ ºノ)'
+    deckard.say(noflip)
+tablefix.rule = '(noflip\!)$'
+
+def disarm_trap(deckard, input):
+    # trap = r_rule.match(input.bytes)
+    trap = 'wfh'
+    deckard.say(trap)
+disarm_trap.rule = '(disarm\?)$'
+
+def pot_leaves(deckard, input):
+    ten = '[10]'
+    deckard.say(ten)
+pot_leaves.rule = '(loadPotLeaves)$'
+
+def canada(deckard, input):
+    eh = 'AMERICA'
+    deckard.say(eh)
+canada.rule = '(canada\?)'
+
+# def hearthstone_key(deckard, input):
+#     reply = 'yeah i dont have one yet'
+#     deckard.say(reply)
+# hearthstone_key.rule = '(deckard: do you need a hearthstone key\?)$'
+
+def dutch_crunch(deckard, input):
+    deckard.say("OMFGGGGG SOOO GOOOOOODDDDD")
+dutch_crunch.rule = '(dutch crunch\?)$'

@@ -27,3 +27,8 @@ def simcity(deckard, input):
     diff = datetime.datetime(2013, 03, 5) - datetime.datetime.now()
     deckard.say("SimCity 5 is " + str(diff.days) + " days, " + str(diff.seconds/60/60) + " hours, and " + str(diff.seconds/60 - diff.seconds/60/60 * 60) + " minutes from now pharix! lol.")
 simcity.rule = '(simcity\?)$'
+
+def brohamas(deckard, input):
+    diff = datetime.datetime(2014, 05, 22) - datetime.datetime.now()
+    deckard.say("Brohamas is " + str(diff.days) + " days, " + str(diff.seconds/60/60) + " hours, and " + str(diff.seconds/60 - diff.seconds/60/60 * 60) + " minutes from now!")
+brohamas.rule = '(brohamas\?)$'
